@@ -86,7 +86,6 @@ function turan() {
   })
 } turan()
 
-
 function hourse() {
   chessBtn2.addEventListener('click', () => {
     chessBtn1.classList.remove('forms__act');
@@ -249,7 +248,6 @@ function king() {
     })
   })
 } king()
-
 
 function paw() {
   chessBtn6.addEventListener('click', () => {
@@ -486,7 +484,6 @@ list.addEventListener('mouseout', () => {
   })
 })
 
-
 let anim3D = document.querySelector('.chess__3d');
 let cou = 1
 anim3D.addEventListener('click', () => {
@@ -500,4 +497,3 @@ anim3D.addEventListener('click', () => {
     cou = 1
   }
 })
-
