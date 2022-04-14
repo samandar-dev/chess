@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.chess {
+  width: 100%;
+  height: 100vh;
+  background: #b77d33;
+}
+
+.container {
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 0 25px;
+  transform: scale(0.8);
+}
+
+.chess__inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.chess__list {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style-type: none;
+}
+
+.chess__item {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  color: #fff;
+  background: #777;
+  text-align: center;
+  line-height: 100px;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+
+.itemBlack {
+  color: #fff;
+  background: #222;
+}
+
+.itemWhite {
+  color: #000;
+  background: #fff;
+}
+
+.green {
+  position: relative;
+  box-shadow: 0 0 30px 13px #05e40d inset;
+  z-index: 3;
+}
+
+.movItem {
+  position: relative;
+  color: #fff;
+  background: rgb(187, 59, 59) !important;
+  z-index: 5;
+}
+
+.span1,
+.span2 {
+  width: 100px;
+  height: 100px;
+  display: none;
+}
+
+.chess__forms {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 120px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.ches__forms-btns {
+  width: 90px;
+  height: 100px;
+  margin-bottom: 10px;
+  background: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.ches__forms-btns:hover {
+  background: rgb(162, 255, 13);
+}
+
+.forms__act {
+  background: rgb(162, 255, 13) !important;
+}
+
+.ches__forms-btns img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.shess__xy-box {
+  position: absolute;
+  top: 100px;
+  right: 150px;
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+}
+
+.shess__y-tit {
+  font-family: sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  color: #333;
+  background: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.shess__x-tit {
+  font-family: sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  color: #333;
+  background: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
