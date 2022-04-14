@@ -63,7 +63,7 @@ body {
   margin: 0;
   padding: 0;
   cursor: pointer;
-  transition: all 0.1s ease;
+  transition: all 0.2s ease;
   overflow: hidden;
 }
 
@@ -82,7 +82,6 @@ body {
   position: relative;
   width: 70px;
   height: 70px;
-  /* background: #fff; */
   background-image: url("/images/white2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -93,6 +92,7 @@ body {
   position: relative;
   box-shadow: 0 0 30px 13px #05e40d inset;
   z-index: 4;
+  transition: all 0.1s ease;
 }
 
 .movItem {
@@ -100,6 +100,7 @@ body {
   color: #fff;
   box-shadow: 0 0 20px 13px #bd3d3d inset;
   z-index: 5;
+  transition: all 0.1s ease;
 }
 
 .form1 {
@@ -109,6 +110,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 5;
+  transition: all 0.1s ease;
 }
 .form2 {
   position: relative;
@@ -117,6 +119,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 5;
+  transition: all 0.1s ease;
 }
 .form3 {
   position: relative;
@@ -125,6 +128,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 5;
+  transition: all 0.1s ease;
 }
 .form4 {
   position: relative;
@@ -133,6 +137,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 5;
+  transition: all 0.1s ease;
 }
 .form5 {
   position: relative;
@@ -141,6 +146,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 5;
+  transition: all 0.1s ease;
 }
 .form6 {
   position: relative;
@@ -149,6 +155,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 5;
+  transition: all 0.1s ease;
 }
 
 .span1,
