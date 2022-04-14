@@ -165,7 +165,6 @@ function quenn() {
           ee.classList.remove('movItem')
         })
         e.classList.add('movItem')
-        yNum.textContent = 12
         x = e.childNodes[1].textContent;
         y = e.childNodes[3].textContent;
 
