@@ -94,12 +94,20 @@ body {
   transition: all 0.1s ease;
 }
 
+.movitem2 {
+  position: relative;
+  color: #fff;
+  box-shadow: 0 0 30px 13px #fff inset;
+  transition: all 0.1s ease;
+  z-index: 5;
+}
+
 .movItem {
   position: relative;
   color: #fff;
-  box-shadow: 0 0 20px 13px #bd3d3d inset;
-  z-index: 5;
+  box-shadow: 0 0 1px 1px #fff inset;
   transition: all 0.1s ease;
+  z-index: 5;
 }
 
 .form1 {

@@ -66,10 +66,9 @@ function turan() {
           ee.classList.remove('form4')
           ee.classList.remove('form5')
           ee.classList.remove('form6')
-          e.classList.add('movItem')
+          e.classList.remove('movItem')
         })
-        e.classList.remove('movItem')
-        e.classList.remove('green')
+        e.classList.add('movItem')
         e.classList.add('form1')
         x = e.childNodes[1].textContent;
         y = e.childNodes[3].textContent;
@@ -107,9 +106,9 @@ function hourse() {
           ee.classList.remove('form4')
           ee.classList.remove('form5')
           ee.classList.remove('form6')
-          e.classList.add('movItem')
+          e.classList.remove('movItem')
         })
-        e.classList.remove('movItem')
+        e.classList.add('movItem')
         e.classList.add('form2')
         x = e.childNodes[1].textContent;
         y = e.childNodes[3].textContent;
@@ -148,9 +147,9 @@ function bishop() {
           ee.classList.remove('form4')
           ee.classList.remove('form5')
           ee.classList.remove('form6')
-          e.classList.add('movItem')
+          e.classList.remove('movItem')
         })
-        e.classList.remove('movItem')
+        e.classList.add('movItem')
         e.classList.add('form3')
         x = e.childNodes[1].textContent;
         y = e.childNodes[3].textContent;
@@ -189,9 +188,9 @@ function quenn() {
           ee.classList.remove('form4')
           ee.classList.remove('form5')
           ee.classList.remove('form6')
-          e.classList.add('movItem')
+          e.classList.remove('movItem')
         })
-        e.classList.remove('movItem')
+        e.classList.add('movItem')
         e.classList.add('form4')
         x = e.childNodes[1].textContent;
         y = e.childNodes[3].textContent;
@@ -230,9 +229,9 @@ function king() {
           ee.classList.remove('form4')
           ee.classList.remove('form5')
           ee.classList.remove('form6')
-          e.classList.add('movItem')
+          e.classList.remove('movItem')
         })
-        e.classList.remove('movItem')
+        e.classList.add('movItem')
         e.classList.add('form5')
         x = e.childNodes[1].textContent;
         y = e.childNodes[3].textContent;
@@ -270,10 +269,10 @@ function paw() {
           ee.classList.remove('form4')
           ee.classList.remove('form5')
           ee.classList.remove('form6')
-          e.classList.add('movItem')
+          e.classList.remove('movItem')
         })
+        e.classList.add('movItem')
         e.classList.add('form6')
-        e.classList.remove('movItem')
         x = e.childNodes[1].textContent;
         y = e.childNodes[3].textContent;
 
@@ -289,21 +288,23 @@ function paw() {
   })
 } paw()
 
-
-
 function itemsFun() {
   items.forEach((e) => {
     e.addEventListener('mouseout', () => {
+      e.classList.remove('movitem2')
       e.classList.remove('movItem')
     })
     e.addEventListener('mouseover', () => {
       items.forEach((ee) => {
+        ee.classList.remove('movitem2')
         ee.classList.remove('movItem')
       })
-      e.classList.add('movItem')
+      e.classList.remove('movItem')
+      e.classList.add('movitem2')
       xNum.innerHTML = e.childNodes[1].textContent;
       yNum.innerHTML = e.childNodes[3].textContent;
     })
+    e.classList.remove('movitem2')
     e.classList.remove('movItem')
   })
 } itemsFun()
