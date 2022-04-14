@@ -482,6 +482,8 @@ list.addEventListener('mouseout', () => {
     im.classList.remove('form4')
     im.classList.remove('form5')
     im.classList.remove('form6')
+    xNum.innerHTML = "";
+    yNum.innerHTML = "";
   })
 })
 
