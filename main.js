@@ -56,13 +56,21 @@ function turan() {
 
     items.forEach((e) => {
       e.addEventListener('mouseout', () => {
-        e.classList.remove('movItem')
+        e.classList.remove('form1')
       })
       e.addEventListener('mouseover', () => {
         items.forEach((ee) => {
-          ee.classList.remove('movItem')
+          ee.classList.remove('form1')
+          ee.classList.remove('form2')
+          ee.classList.remove('form3')
+          ee.classList.remove('form4')
+          ee.classList.remove('form5')
+          ee.classList.remove('form6')
+          e.classList.add('movItem')
         })
-        e.classList.add('movItem')
+        e.classList.remove('movItem')
+        e.classList.remove('green')
+        e.classList.add('form1')
         x = e.childNodes[1].textContent;
         y = e.childNodes[3].textContent;
 
@@ -90,13 +98,20 @@ function hourse() {
 
     items.forEach((e) => {
       e.addEventListener('mouseout', () => {
-        e.classList.remove('movItem')
+        e.classList.remove('form2')
       })
       e.addEventListener('mouseover', () => {
         items.forEach((ee) => {
-          ee.classList.remove('movItem')
+          ee.classList.remove('form1')
+          ee.classList.remove('form2')
+          ee.classList.remove('form3')
+          ee.classList.remove('form4')
+          ee.classList.remove('form5')
+          ee.classList.remove('form6')
+          e.classList.add('movItem')
         })
-        e.classList.add('movItem')
+        e.classList.remove('movItem')
+        e.classList.add('form2')
         x = e.childNodes[1].textContent;
         y = e.childNodes[3].textContent;
 
@@ -124,13 +139,20 @@ function bishop() {
 
     items.forEach((e) => {
       e.addEventListener('mouseout', () => {
-        e.classList.remove('movItem')
+        e.classList.remove('form3')
       })
       e.addEventListener('mouseover', () => {
         items.forEach((ee) => {
-          ee.classList.remove('movItem')
+          ee.classList.remove('form1')
+          ee.classList.remove('form2')
+          ee.classList.remove('form3')
+          ee.classList.remove('form4')
+          ee.classList.remove('form5')
+          ee.classList.remove('form6')
+          e.classList.add('movItem')
         })
-        e.classList.add('movItem')
+        e.classList.remove('movItem')
+        e.classList.add('form3')
         x = e.childNodes[1].textContent;
         y = e.childNodes[3].textContent;
 
@@ -158,13 +180,20 @@ function quenn() {
 
     items.forEach((e) => {
       e.addEventListener('mouseout', () => {
-        e.classList.remove('movItem')
+        e.classList.remove('form4')
       })
       e.addEventListener('mouseover', () => {
         items.forEach((ee) => {
-          ee.classList.remove('movItem')
+          ee.classList.remove('form1')
+          ee.classList.remove('form2')
+          ee.classList.remove('form3')
+          ee.classList.remove('form4')
+          ee.classList.remove('form5')
+          ee.classList.remove('form6')
+          e.classList.add('movItem')
         })
-        e.classList.add('movItem')
+        e.classList.remove('movItem')
+        e.classList.add('form4')
         x = e.childNodes[1].textContent;
         y = e.childNodes[3].textContent;
 
@@ -192,13 +221,20 @@ function king() {
 
     items.forEach((e) => {
       e.addEventListener('mouseout', () => {
-        e.classList.remove('movItem')
+        e.classList.remove('form5')
       })
       e.addEventListener('mouseover', () => {
         items.forEach((ee) => {
-          ee.classList.remove('movItem')
+          ee.classList.remove('form1')
+          ee.classList.remove('form2')
+          ee.classList.remove('form3')
+          ee.classList.remove('form4')
+          ee.classList.remove('form5')
+          ee.classList.remove('form6')
+          e.classList.add('movItem')
         })
-        e.classList.add('movItem')
+        e.classList.remove('movItem')
+        e.classList.add('form5')
         x = e.childNodes[1].textContent;
         y = e.childNodes[3].textContent;
 
@@ -226,13 +262,20 @@ function paw() {
 
     items.forEach((e) => {
       e.addEventListener('mouseout', () => {
-        e.classList.remove('movItem')
+        e.classList.remove('form6')
       })
       e.addEventListener('mouseover', () => {
         items.forEach((ee) => {
-          ee.classList.remove('movItem')
+          ee.classList.remove('form1')
+          ee.classList.remove('form2')
+          ee.classList.remove('form3')
+          ee.classList.remove('form4')
+          ee.classList.remove('form5')
+          ee.classList.remove('form6')
+          e.classList.add('movItem')
         })
-        e.classList.add('movItem')
+        e.classList.add('form6')
+        e.classList.remove('movItem')
         x = e.childNodes[1].textContent;
         y = e.childNodes[3].textContent;
 
@@ -243,7 +286,7 @@ function paw() {
           count = 1
         }
       })
-      e.classList.remove('movItem')
+      e.classList.remove('form6')
     })
   })
 } paw()
@@ -434,6 +477,27 @@ function forms6(x, y) {
 list.addEventListener('mouseout', () => {
   items.forEach((im) => {
     im.classList.remove('green')
+    im.classList.remove('form1')
+    im.classList.remove('form2')
+    im.classList.remove('form3')
+    im.classList.remove('form4')
+    im.classList.remove('form5')
+    im.classList.remove('form6')
   })
+})
+
+
+let anim3D = document.querySelector('.chess__3d');
+let cou = 1
+anim3D.addEventListener('click', () => {
+  list.classList.toggle('anim3D')
+  if (cou == 1) {
+    anim3D.textContent = '2D'
+    cou++
+  }
+  else {
+    anim3D.textContent = '3D'
+    cou = 1
+  }
 })
 

@@ -12,10 +12,9 @@ body {
 
 .container {
   width: 100%;
-  max-width: 850px;
+  max-width: 560px;
   margin: 0 auto;
-  padding: 0 25px;
-  transform: scale(0.8);
+  perspective: 1000px;
 }
 
 .chess__inner {
@@ -23,6 +22,16 @@ body {
   width: 100%;
   height: 100%;
   display: flex;
+}
+
+.chess__dosc {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 560px;
+  height: auto;
+  transform-style: preserve-3d;
 }
 
 .chess__list {
@@ -34,12 +43,19 @@ body {
   flex-wrap: wrap;
   align-items: center;
   list-style-type: none;
+  border: 20px solid rgb(102, 66, 32);
+  border-radius: 10px;
+  transition: all 0.5s ease;
+}
+
+.anim3D {
+  transform: rotateX(45deg);
 }
 
 .chess__item {
   position: relative;
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
   color: #fff;
   background: #777;
   text-align: center;
@@ -48,28 +64,91 @@ body {
   padding: 0;
   cursor: pointer;
   transition: all 0.1s ease;
+  overflow: hidden;
 }
 
 .itemBlack {
-  color: #fff;
-  background: #222;
+  position: relative;
+  width: 70px;
+  height: 70px;
+  /* background: #222; */
+  background-image: url("/images/black.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 3;
 }
 
 .itemWhite {
-  color: #000;
-  background: #fff;
+  position: relative;
+  width: 70px;
+  height: 70px;
+  /* background: #fff; */
+  background-image: url("/images/white2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 2;
 }
 
 .green {
   position: relative;
   box-shadow: 0 0 30px 13px #05e40d inset;
-  z-index: 3;
+  z-index: 4;
 }
 
 .movItem {
   position: relative;
   color: #fff;
   box-shadow: 0 0 20px 13px #bd3d3d inset;
+  /* background-image: url("/images/forms1.svg"); */
+  z-index: 5;
+}
+
+.form1 {
+  position: relative;
+  background: #fff;
+  background-image: url("/images/forms1.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 5;
+}
+.form2 {
+  position: relative;
+  background: #fff;
+  background-image: url("/images/forms2.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 5;
+}
+.form3 {
+  position: relative;
+  background: #fff;
+  background-image: url("/images/forms3.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 5;
+}
+.form4 {
+  position: relative;
+  background: #fff;
+  background-image: url("/images/forms4.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 5;
+}
+.form5 {
+  position: relative;
+  background: #fff;
+  background-image: url("/images/forms5.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 5;
+}
+.form6 {
+  position: relative;
+  background: #fff;
+  background-image: url("/images/forms6.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
   z-index: 5;
 }
 
@@ -91,8 +170,8 @@ body {
 }
 
 .ches__forms-btns {
-  width: 90px;
-  height: 100px;
+  width: 80px;
+  height: 90px;
   margin-bottom: 10px;
   background: #fff;
   border: none;
@@ -142,4 +221,24 @@ body {
   background: #fff;
   padding: 5px 10px;
   border-radius: 5px;
+}
+
+.chess__3d {
+  padding: 5px 30px;
+  border: none;
+  color: #222;
+  font-size: 25px;
+  font-family: sans-serif;
+  font-weight: 600;
+  background: rgb(255, 255, 255);
+  border-radius: 5px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.chess__3d:hover {
+  color: #fff;
+  background: rgb(177, 125, 65);
+  border: 2px solid #000;
 }
